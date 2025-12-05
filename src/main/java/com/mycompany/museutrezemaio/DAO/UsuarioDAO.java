@@ -26,6 +26,8 @@ public class UsuarioDAO {
             stmt.setString(3, u.getTelefone());
             stmt.setString(4, u.getEmail());
             stmt.setString(5, u.getEndereco());
+            stmt.executeUpdate();
+            
             System.out.println("Usuário inserido com sucesso!");
         } catch (Exception e) {
             System.out.println("Erro ao inserir usuário: " + e.getMessage());

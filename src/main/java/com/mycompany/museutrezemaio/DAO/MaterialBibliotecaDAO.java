@@ -40,6 +40,7 @@ public class MaterialBibliotecaDAO {
             stmt.setString(9, m.getEditora());
             stmt.setInt(10, m.getQuantidadeExemplares());
             stmt.setBoolean(11, m.isDisponivel());
+            stmt.executeUpdate();
             
             System.out.println("Material inserido com sucesso!");
         } catch (Exception e) {

@@ -30,7 +30,7 @@ public class AcervoHistoricoDAO {
             stmt.setString(5, a.getLocalOrigem());
             stmt.setString(6, a.getDoador());
             stmt.setString(7, a.getCaminhoDigitalizacao());
-            
+            stmt.executeUpdate();
             System.out.println("Item do acervo inserido com sucesso!");
         } catch (Exception e) {
             System.out.println("Erro ao inserir item do acervo: " + e.getMessage());
@@ -53,7 +53,7 @@ public class AcervoHistoricoDAO {
                     rs.getString("titulo"),
                     rs.getString("descricao"),
                     rs.getDate("data_item"),
-                    rs.getString("palavra_chave"),
+                        null,
                     rs.getString("local_origem"),
                     rs.getString("doador"),
                     rs.getString("caminho_digitalizacao")
