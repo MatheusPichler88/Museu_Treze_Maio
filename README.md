@@ -69,7 +69,7 @@ Controle Geral do Sistema
 🧰 IDE: NetBeans
 
 🚀 Como Executar o Projeto
-git clone https://github.com/MatheusPichler88/nome-do-repositorio.git
+git clone https://github.com/MatheusPichler88/Museu_Treze_Maio.git
 
 
 Importar o projeto na IDE
